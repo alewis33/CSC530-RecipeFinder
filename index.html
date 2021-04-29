@@ -1,16 +1,51 @@
 <html>
     <head>
-        <title>RecipeFinder - Home</title>
+        <title>RecipeFinder - Welcome</title>
         <link rel="stylesheet" href="recipefinder.css">
+        <style>
+        h3, p   {
+            color: white;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 180px;
+            padding: 10px;
+            
+        }
+        .grid-item {
+            background-color: #6b8970;
+            padding: 60px;
+            text-align: center;
+        }
+        .button {
+            background-color: #7faabf;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: auto;
+            cursor: pointer;        
+        }
+        </style>
     </head>
     <body>
         <div class="bodycontainer">
             <div class="homelogo">
                 <img src="Pictures/logooptionlong.png">
                </div> 
-               <br/>
-            <button><a href="signin.html">Log In</a></button>
-            <button><a href="signup.html">Sign Up</a></button>
+               <h3>Welcome to RecipeFinder ~ Let's get cooking!</h3>
+               <p>Please log in with your existing account or sign up.</p>
+               <hr>
+               <div class="grid-container">
+                 <div class="grid-item"><a href="login.html" class="button">Log In</a></div>
+                 <div class="grid-item"><a href="signup.html" class="button">Sign Up</a></div>
+               </div>
+               <hr>
         </div>
     </body>
 </html>

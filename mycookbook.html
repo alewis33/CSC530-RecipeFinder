@@ -1,7 +1,55 @@
-  <html>
+<html>
     <head>
         <title>RecipeFinder - My Cookbook</title>
         <link rel="stylesheet" href="recipefinder.css">
+        <style>
+          h1, h3 {
+              text-align: center;
+              color:white;
+  
+          }
+          .image {
+              border: 3px solid #ffffff;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          ol  {
+              color: white;
+        
+          }
+          h4  {
+              color: white;
+              padding-left: 5px;
+              display: inline;
+          }
+          .grid-container {
+              display: grid;
+              grid-template-columns: auto auto;
+              grid-template-rows: 180px 180px;
+              padding: 10px;
+              
+          }
+          .grid-item {
+              background-image:url(../RecipeFinder/Pictures/notecard.jpg);
+              background-size:cover;
+              border: 2px solid #354b4e;
+              padding: 60px;
+              text-align: center;
+          }
+          .button {
+              background-color: #7faabf;
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: auto;
+              cursor: pointer;        
+          }
+      </style>
     </head>
     <body>
         <div class="bodycontainer">
@@ -18,14 +66,16 @@
             </ul> 
             </div>
             <br /><br />
-            <button><a href="mycookbook1.html">Cookbook #1</a></button>
-            <br /><br />
-            <button><a href="mycookbook2.html">Cookbook #2</a></button>
-            <br /><br />
-            <button><a href="mycookbook3.html">Cookbook #3</a></button>
-            <br /><br />
-            <button><a href="mycookbook4.html">Cookbook #4</a></button>
-        </div>
+            <h1>Welcome to your Cookbook</h1>
+            <h3>Please select a cookbook below to view recipes in!</h3>
+            <div class="grid-container">
+              <div class="grid-item"><a href="mycookbook1.html" class="button">Cookbook #1</a></div>
+              <div class="grid-item"><a href="mycookbook2.html" class="button">Cookbook #2</a></div>
+              <div class="grid-item"><a href="mycookbook3.html" class="button">Cookbook #3</a></div>
+              <div class="grid-item"><a href="mycookbook4.html" class="button">Cookbook #4</a></div>
+            </div>  
+          </div>
     </body>
-</html>
+  </html>
+
  
