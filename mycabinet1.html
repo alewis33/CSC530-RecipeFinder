@@ -2,21 +2,78 @@
     <head>
         <title>RecipeFinder - Cabinet #1</title>
         <link rel="stylesheet" href="recipefinder.css">
+        <style>
+            h1, h3 {
+                text-align: center;
+                color:white;
+    
+            }
+            .image {
+                border: 3px solid #ffffff;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ol  {
+                color: white;
+          
+            }
+            h4  {
+                color: white;
+                padding-left: 5px;
+                display: inline;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: 180px 180px;
+                padding: 10px;
+                
+            }
+            .grid-item {
+                background-image:url(../RecipeFinder/Pictures/notecard.jpg);
+                background-size:cover;
+                border: 2px solid #354b4e;
+                padding: 60px;
+                text-align: center;
+            }
+            .button {
+                background-color: #7faabf;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: auto;
+                cursor: pointer;        
+            }
+        </style>
     </head>
     <body>
         <div class="bodycontainer">
             <div class="homelogo">
                 <a href="mycabinet.html"><img src="Pictures/logooptionlong.png"></a>
                </div>    
-  <br /><br />
-             <button>Pantry</button>
-             <br /><br />
-             <button>Fridge</button>
-             <br /><br />
-             <button>Freezer</button>
-             <br /><br />
-             <button>Spice Rack</button>
-             <br /><br  />
+               <div class="nav">
+                <ul>
+                    <li><a href="mycabinet.html">My Cabinet</a></li>
+                    <li><a href="mycookbook.html">My Cookbook</a></li>
+                    <li><a href="systemprefrences.html">System Preferences</a></li>
+                    <li><a href="accountsettings.html">Account Settings</a></li>
+                </ul> 
+                </div>
+            <h3>Cabinet #1</h3>
+            <div class="grid-container">
+                <div class="grid-item"><a href="" class="button">Pantry</a></div>
+                <div class="grid-item"><a href="" class="button">Fridge</a></div>
+                <div class="grid-item"><a href="" class="button">Freezer</a></div>
+                <div class="grid-item"><a href="" class="button">Spice Rack</a></div>
+                <br />
+                <div class="grid-item"><a href="" class="button">Find me a Recipe!</a></div>
+            </div>  
         </div>
     </body>
 </html>
+

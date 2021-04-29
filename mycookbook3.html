@@ -1,30 +1,75 @@
 <html>
-<head>
-    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
-    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
-</head>
-<div class="toolbar">
-    <div class="toolbar__left">
-        <img src="../Pictures/LogoOption.png" width="75" height="45">
-    </div>
-
-    <div class="toolbar__center">My Cookbook #3</div>
-
-    <div class="toolbar__right">
-        <span class="toolbar-button">
-          <i class="ion-ios-menu" style="font-size:32px; vertical-align:-6px;"></i>
-        </span>
-      </div>
-  
-  </div>
-  <on-page>
-  <br /><br />
-             <ons-button>Recipe #1</ons-button>
-             <br /><br />
-             <ons-button>Recipe #2</ons-button>
-             <br /><br />
-             <ons-button>Recipe #3</ons-button>
-             
-    </on-page>
+    <head>
+        <title>RecipeFinder - Cookbook #3</title>
+        <link rel="stylesheet" href="recipefinder.css">
+        <style>
+            h1, h3 {
+                text-align: center;
+                color:white;
+    
+            }
+            .image {
+                border: 3px solid #ffffff;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ol  {
+                color: white;
+          
+            }
+            h4  {
+                color: white;
+                padding-left: 5px;
+                display: inline;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: 180px 180px;
+                padding: 10px;
+                
+            }
+            .grid-item {
+                background-image:url(../RecipeFinder/Pictures/notecard.jpg);
+                background-size:cover;
+                border: 2px solid #354b4e;
+                padding: 60px;
+                text-align: center;
+            }
+            .button {
+                background-color: #7faabf;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: auto;
+                cursor: pointer;        
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bodycontainer">
+            <div class="homelogo">
+                <a href="mycookbook.html"><img src="Pictures/logooptionlong.png"></a>
+               </div>
+               <div class="nav">
+                <ul>
+                    <li><a href="mycabinet.html">My Cabinet</a></li>
+                    <li><a href="mycookbook.html">My Cookbook</a></li>
+                    <li><a href="systemprefrences.html">System Preferences</a></li>
+                    <li><a href="accountsettings.html">Account Settings</a></li>
+                </ul> 
+                </div>
+            <h3>Cookbook #3</h3>
+            <div class="grid-container">
+                <div class="grid-item"><a href="" class="button">Recipe #1</a></div>
+                <div class="grid-item"><a href="" class="button">Recipe #2</a></div>
+                <div class="grid-item"><a href="" class="button">Recipe #3</a></div>
+            </div>  
+        </div>
+    </body>
 </html>
