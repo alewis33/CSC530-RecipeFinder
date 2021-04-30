@@ -1,0 +1,129 @@
+<html>
+  <head>
+      <title>RecipeFinder - Account Settings</title>
+      <link rel="stylesheet" href="recipefinder.css">
+      <style>
+        .imgcontainer {
+              text-align: center;
+              margin: 24px 0 12px 0;
+            }
+            
+        img.avatar {
+              
+              border-radius: 50%;
+            }
+        form    {
+                color: white;
+                text-align: center;
+            }
+
+        h3, h4  {
+                text-align: center;
+                color: white;
+            }
+        .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: 180px;
+                padding: 10px;
+            
+            }
+        .grid-item {
+                background-color:  #7faabf;;
+                padding: 60px;
+                text-align: center;
+            }
+        .button {
+            background-color: #7faabf;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: auto;
+            cursor: pointer;   
+        }
+        .container { 
+            height: 100px;
+            position: relative;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+      </style>
+    </head>
+  <body>
+
+      <div class="bodycontainer">
+          <div class="homelogo">
+            <a href="homepage.html"><img src="Pictures/logooptionlong.png"></a>
+             </div> 
+             <br/>
+
+      <div class="nav">
+          <ul>
+              <li><a href="mycabinet.html">My Cabinet</a></li>
+              <li><a href="mycookbook.html">My Cookbook</a></li>
+              <li><a href="info.html">About RecipeFinder</a></li>
+              <li><a href="accountsettings.html">Account Settings</a></li>
+          </ul> 
+          </div>
+
+          <br   />
+
+          <h3>Your Account Settings</h3>
+
+          <form action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <img src="Pictures/profilepic.jpg" alt="Avatar" class="avatar" width="200px">
+            </div>
+          </form>
+
+          <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" value=""><br><br>
+            <label for="pword">Password:</label><br>
+            <input type="text" id="pword" name="pword" value=""><br><br>
+          </form>
+
+          <div class="container">
+            <div class="center">
+                <button class="button">Edit Account</button> 
+                <button class="button">Delete Account</button>
+            </div>
+          </div>
+
+          <div class="grid-container">
+            <form>
+            <div class="grid-item">
+                <h4>Prefrences</h4>
+                <input type="checkbox" id="vegan" name="vegan" value="vegan">
+                <label for="vegan">vegan</label>
+            <br>
+                <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian">
+                <label for="vegetarian">vegetarian</label>
+            <br>
+                <input type="checkbox" id="pescatarian" name="pescatarian" value="pescatarian">
+                <label for="pescatarian">pescatarian</label>
+            <br>
+                <input type="checkbox" id="glutenfree" name="glutenfree" value="glutenfree">
+                <label for="glutenfree">gluten free</label>
+            </div>
+            </form>
+          </div> 
+        <br><br><br><br><br>
+      </div>
+  </body>
+</html>
+
